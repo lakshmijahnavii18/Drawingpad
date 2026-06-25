@@ -42,5 +42,5 @@ python drawing_pad.py
 - Save drawings as images
 - Eraser tool
 
-## 👩‍💻 Author
-Student Name
+##  Author
+lakshmi jahnavi
