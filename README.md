@@ -1,22 +1,46 @@
-from tkinter import *
+#  Drawing Pad Using Python
 
-root = Tk()
-root.title("Drawing Pad")
-root.geometry("800x600")
+##  Overview
+Drawing Pad is a simple Python application developed using the Tkinter library. It allows users to draw freely on a canvas using the mouse and clear the drawing area when needed.
 
-canvas = Canvas(root, bg="white", width=800, height=550)
-canvas.pack()
+##  Objectives
+- To create a simple drawing application.
+- To demonstrate GUI development using Tkinter.
+- To implement mouse event handling in Python.
+- To provide an interactive drawing interface.
 
-def draw(event):
-    x, y = event.x, event.y
-    canvas.create_oval(x, y, x+4, y+4, fill="black", outline="black")
+##  Features
+- Draw using mouse movements
+- Simple graphical user interface
+- Clear canvas option
+- User-friendly design
 
-def clear_canvas():
-    canvas.delete("all")
+## Technologies Used
+- Python
+- Tkinter
 
-canvas.bind("<B1-Motion>", draw)
+##  Project Structure
 
-clear_button = Button(root, text="Clear Canvas", command=clear_canvas)
-clear_button.pack(pady=10)
+Drawing-Pad/
+│── drawing_pad.py
+│── README.md
+│── Documentation.md
 
-root.mainloop()
+## ▶ How to Run
+
+python drawing_pad.py
+
+##  Concepts Used
+- GUI Programming
+- Tkinter Widgets
+- Event Handling
+- Functions
+
+  Future Enhancements
+- Multiple brush colors
+- Brush size adjustment
+- Save drawings as images
+- Eraser tool
+
+## 👩‍💻 Author
+Student Name
